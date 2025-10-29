@@ -1,8 +1,14 @@
 <html>
     <head>
-        <title>Prueba de imagen</title>
+        <title>Prueba de audio</title>
     </head>
     <body>
-<audio src="audio.mp3" controls loop></audio>
+<audio src="audio.mp3" id="miAudio" controls loop ></audio>
+
+
+<script>
+  const audio = document.getElementById('miAudio');
+  audio.volume = 0.3; // volumen inicial al 30%
+</script>
 </body>
 </html>
