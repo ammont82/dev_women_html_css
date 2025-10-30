@@ -1,0 +1,51 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    background-color: #f0f0f0; /* Fondo gris claro */
+}
+
+h1 {
+    color: #333; /* Texto oscuro */
+}
+
+/* Clase para tarjetas */
+.tarjeta {
+    width: 200px;
+    height: 100px;
+    margin: 10px auto;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+/* Colores diferentes */
+.tarjeta-1 {
+    color: rgb(110, 85, 95);
+    background-color: rgb(189, 87, 24); /* Nombre del color */
+}
+
+.tarjeta-2 {
+    color: #000; 
+    background-color: #77c745; /* HEX */
+}
+
+.tarjeta-3 {
+    color: rgb(55,78,23);
+    background-color: rgb(99, 108, 118); /* RGB */
+}
+
+.tarjeta-4 {
+    color: #fff;
+    background-color: hsl(140, 80%, 20%); /* HSL */
+}
+
+.tarjeta-5 {
+    color: black;
+    background-color: rgb(213, 173, 220);
+}
