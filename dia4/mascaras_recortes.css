@@ -19,8 +19,10 @@ body {
   margin: 20px;
   clip-path: circle(50% at 50% 50%); /* Recortamos la imagen en forma circular */
   shape-outside: circle(50% at 50% 50%); /* Ajustamos el texto alrededor de la forma */
-  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: radial-gradient(ellipse, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
+  mask-image:  radial-gradient(ellipse, rgba(0, 0, 0, 1) 70%, rgba(0, 0, 0, 0) 100%);
   -webkit-mask-composite: destination-in;
+  mask-composite: destination-in;
   object-fit: cover;
 }
 
@@ -36,7 +38,7 @@ body {
 
 .highlight {
   background: linear-gradient(90deg, rgba(255, 0, 150, 0.3), rgba(0, 123, 255, 0.3));
-  clip-path: polygon(0% 0%, 80% 0%, 100% 100%, 0% 100%); /* Forma triangular */
+  clip-path: polygon(10% 10%, 80% 0%, 100% 100%, 0% 100%); /* Forma triangular */
   padding: 10px;
   margin: 20px 0;
 }
@@ -45,7 +47,7 @@ body {
   width: 100%;
   height: 200px;
   background: url('restaurante.jpg') no-repeat center / cover;
-  mask-image: linear-gradient(to right, black 60%, transparent);
-  -webkit-mask-image: linear-gradient(to right, black 60%, transparent); /* Compatibilidad */
+  mask-image: linear-gradient(to left, black 60%, transparent);
+  -webkit-mask-image: linear-gradient(to left, black 60%, transparent); /* Compatibilidad */
   margin: 30px 0;
 }

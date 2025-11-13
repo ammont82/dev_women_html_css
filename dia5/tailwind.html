@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo con Tailwind CSS</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- 🧭 Barra de navegación -->
+  <nav class="bg-blue-600 text-white p-4">
+    <div class="container mx-auto flex justify-between items-center">
+      <a href="#" class="font-bold text-xl">Mi Sitio</a>
+      <ul class="flex space-x-4">
+        <li><a href="#" class="hover:underline">Inicio</a></li>
+        <li><a href="#" class="hover:underline">Sobre mí</a></li>
+        <li><a href="#" class="hover:underline">Contacto</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- 🏠 Sección principal -->
+  <div class="container mx-auto my-10 text-center">
+    <h1 class="text-3xl font-bold mb-8">Bienvenidos a mi página</h1>
+
+    <!-- Grid de tarjetas -->
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+      
+      <!-- Tarjeta 1 -->
+      <div class="bg-white rounded-lg shadow p-4">
+        <img src="https://picsum.photos/300/200" class="rounded mb-4">
+        <h2 class="text-xl font-semibold mb-2">Proyecto 1</h2>
+        <p class="mb-4">Descripción breve del proyecto con Tailwind CSS.</p>
+        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ver más</a>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="bg-white rounded-lg shadow p-4">
+        <img src="https://picsum.photos/301/200" class="rounded mb-4">
+        <h2 class="text-xl font-semibold mb-2">Proyecto 2</h2>
+        <p class="mb-4">Otra tarjeta con imagen y botón, mostrando flexibilidad.</p>
+        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ver más</a>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="bg-white rounded-lg shadow p-4">
+        <img src="https://picsum.photos/302/200" class="rounded mb-4">
+        <h2 class="text-xl font-semibold mb-2">Proyecto 3</h2>
+        <p class="mb-4">Demostración del diseño responsivo con Tailwind CSS.</p>
+        <a href="#" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Ver más</a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ⚙️ Pie de página -->
+  <footer class="bg-gray-100 text-center py-4 mt-10">
+    <p>© 2025 Mi Sitio Web - Hecho con 💙 y Tailwind CSS</p>
+  </footer>
+
+</body>
+</html>

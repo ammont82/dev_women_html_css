@@ -1,0 +1,94 @@
+/* 🌈 Estilos base */
+:root {
+    --color-bg: #f9fafb;
+    --color-primary: #3b82f6;
+    --color-text: #111827;
+  }
+
+  body {
+    font-family: system-ui, sans-serif;
+    background: var(--color-bg);
+    color: var(--color-text);
+    display: grid;
+    place-items: center;
+    min-height: 100vh;
+    padding: 2rem;
+  }
+
+  /* 🧱 Contenedor con container queries */
+  .card-container {
+    container-type: inline-size;
+    display: grid;
+    gap: 1rem;
+    max-width: 600px;
+    background: white;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 2rem;
+    animation: fadeIn linear view();
+  }
+
+  @container (width > 500px) {
+    .card-container {
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+    }
+  }
+
+  /* 🖼️ Imagen */
+  .card-img {
+    width: 100%;
+    border-radius: 1rem;
+  }
+
+  /* ✍️ Texto equilibrado */
+  h2 {
+    font-size: 1.8rem;
+    text-wrap: balance;
+  }
+
+  /* 📩 Formulario con field-sizing y validación */
+  form {
+    display: grid;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  textarea {
+    field-sizing: content;
+    min-height: 2rem;
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    resize: none;
+    transition: border-color 0.3s;
+  }
+
+  textarea:valid {
+    border-color: #22c55e;
+  }
+
+  textarea:invalid {
+    border-color: #ef4444;
+  }
+
+  /* 🔘 Botón que se activa solo si el textarea tiene contenido */
+  form:has(textarea:valid) button {
+    background: var(--color-primary);
+    color: white;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    border: none;
+    background: #ccc;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+
+  /* 🌀 Animación con view() */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }

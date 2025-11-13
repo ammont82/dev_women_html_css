@@ -37,7 +37,7 @@ body {
   
   .absolute-box {
     position: absolute;
-    top: 50px;
+    bottom: 10px;
     right: 20px;
     width: 150px;
     height: 100px;
@@ -51,6 +51,7 @@ body {
   /* Contenedor sticky */
   .sticky-container {
     width: 80%;
+    height: 400px;
     margin: 40px auto;
     padding: 20px;
     background-color: #fce4ec;
@@ -110,7 +111,7 @@ body {
   .anchor-box {
     position: anchor;
     anchor-name: anchor;
-    anchor-offset: 20px 20px;
+    anchor-offset: 40px 40px;
     width: 200px;
     height: 100px;
     background-color: #2196F3;

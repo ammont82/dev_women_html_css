@@ -18,6 +18,7 @@
         <strong>clip-path</strong>, <strong>float</strong>, <strong>shape-outside</strong> y <strong>mask-image</strong>.
         Observa cómo el texto se ajusta alrededor de la imagen gracias al uso de la propiedad <strong>shape-outside</strong>.
       </p>
+      <br/><br/>
       <div class="highlight">
         <p>
           Este es un ejemplo de un bloque con un recorte triangular usando <strong>clip-path: polygon</strong>.
@@ -29,6 +30,20 @@
       </p>
     </div>
     <div class="mask-image"></div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" role="img" aria-label="Imagen recortada con polígono irregular">
+      <defs>
+        <clipPath id="irregularClip2" clipPathUnits="userSpaceOnUse">
+          <polygon points="40,110 200,20 380,50 580,10 740,170 680,400 480,510 260,470 110,330"/>
+        </clipPath>
+      </defs>
+
+      <image x="0" y="0" width="800" height="600"
+             href="https://images.unsplash.com/photo-1503023345310-bd7c1de61c7d?auto=format&fit=crop&w=800&q=80"
+             clip-path="url(#irregularClip2)"
+             preserveAspectRatio="xMidYMid slice" />
+      <polygon points="40,110 200,20 380,50 580,10 740,170 680,400 480,510 260,470 110,330"
+               fill="none" stroke="rgba(255,255,255,0.9)" stroke-width="6" stroke-linejoin="round"/>
+    </svg>
   </div>
 </body>
 </html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Login - Demo Fake</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Iniciar sesión</h1>
+
+    <form id="loginForm" class="card" novalidate>
+      <label>
+        Email
+        <input type="email" id="email" required placeholder="ana@example.com" />
+      </label>
+
+      <label>
+        Contraseña
+        <input type="password" id="password" required placeholder="1234" />
+      </label>
+
+      <button type="submit">Entrar</button>
+
+      <p id="message" class="message"></p>
+    </form>
+
+    <div class="card tips">
+      <p>¿No tienes cuenta? <a href="register.html">Regístrate</a></p>
+      <h3>Credenciales de prueba</h3>
+      <ul>
+        <li>ana@example.com / 1234</li>
+        <li>lucia@example.com / abcd</li>
+      </ul>
+      <p>Abre la pestaña <strong>Network</strong> en DevTools para ver las peticiones.</p>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

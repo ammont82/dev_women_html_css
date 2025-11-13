@@ -57,7 +57,7 @@ body {
   }
 
   /* Pantallas de tablet (max-width: 768px) */
-  @media (min-width: 768px) and (max-width: 1024px) and (max-resolution: 120dpi)  {
+  @media (768px <= width <= 1024px) and (max-resolution: 120dpi)  {
     body {
         background-color: rgb(18, 124, 160);
     }
@@ -96,8 +96,9 @@ body {
     }
   }
 
+  @media (width <= 480px) and (orientation: portrait) {
     /* Pantallas móviles (max-width: 480px) */
-    @media (max-width: 480px) and (orientation: portrait) {
+ 
         body {
             background-color: rgb(160, 30, 18);
         }

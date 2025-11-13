@@ -29,14 +29,14 @@ body {
     font-size: 1.5rem;
 
     /* Usando calc() para un tamaño dinámico */
-    width: calc(100px + 50px);
+    width: calc(100px + 250px);
     height: calc(1em + 2vw + 30px + 20px);
 
     /* Usando clamp() para controlar el tamaño del texto */
     font-size: clamp(16px, 2vw, 24px);
 
     /* Usando min() y max() */
-    max-width: min(400px, 30px);
+    max-width: min(400px, 230px);
     max-height: max(200px, 540px);
     overflow: hidden;
     border-radius: 10px;
