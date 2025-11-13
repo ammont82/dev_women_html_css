@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo con Foundation</title>
+  <!-- Foundation CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.7/dist/css/foundation.min.css">
+</head>
+<body>
+
+  <!-- 🧭 Barra de navegación -->
+  <div class="top-bar">
+    <div class="top-bar-left">
+      <ul class="menu">
+        <li class="menu-text">Mi Sitio</li>
+      </ul>
+    </div>
+    <div class="top-bar-right">
+      <ul class="menu">
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#">Sobre mí</a></li>
+        <li><a href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- 🏠 Sección principal -->
+  <div class="grid-container my-5">
+    <h1 class="text-center">Bienvenidos a mi página</h1>
+
+    <div class="grid-x grid-margin-x small-up-1 medium-up-3">
+      
+      <!-- Tarjeta 1 -->
+      <div class="cell">
+        <div class="card">
+          <img src="https://picsum.photos/300/200" alt="Proyecto 1">
+          <div class="card-section">
+            <h4>Proyecto 1</h4>
+            <p>Descripción breve del proyecto usando Foundation.</p>
+            <a href="#" class="button">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="cell">
+        <div class="card">
+          <img src="https://picsum.photos/301/200" alt="Proyecto 2">
+          <div class="card-section">
+            <h4>Proyecto 2</h4>
+            <p>Otra tarjeta mostrando la simplicidad de Foundation.</p>
+            <a href="#" class="button">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="cell">
+        <div class="card">
+          <img src="https://picsum.photos/302/200" alt="Proyecto 3">
+          <div class="card-section">
+            <h4>Proyecto 3</h4>
+            <p>Demostración del diseño responsivo con Foundation.</p>
+            <a href="#" class="button">Ver más</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ⚙️ Pie de página -->
+  <footer class="grid-container text-center my-5">
+    <p>© 2025 Mi Sitio Web - Hecho con 💙 y Foundation</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/foundation-sites@6.7.7/dist/js/foundation.min.js"></script>
+  <script>
+    // Inicialización sin jQuery
+    document.addEventListener('DOMContentLoaded', function () {
+      Foundation.initialize();
+    });
+  </script>
+
+</body>
+</html>

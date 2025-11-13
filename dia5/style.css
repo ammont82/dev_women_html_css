@@ -1,0 +1,183 @@
+.iphone-plus {
+    position: relative;
+    width: 414px;
+    height: 736px;
+    border-radius: 30px;
+    overflow: hidden;
+    background-image: url(./img/iphone-8-plus-10.png);
+    background-size: cover;
+    background-position: 50% 50%;
+  }
+  
+  .iphone-plus .image {
+    top: 0;
+    left: 0;
+    width: 414px;
+    height: 736px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .iphone-plus .ellipse {
+    position: absolute;
+    top: 291px;
+    left: 130px;
+    width: 154px;
+    height: 154px;
+    border-radius: 77px;
+    background: linear-gradient(
+      313deg,
+      rgba(135, 83, 207, 1) 40%,
+      rgba(135, 83, 207, 0.65) 71%,
+      rgba(135, 83, 207, 0.23) 94%
+    );
+  }
+  
+  .iphone-plus .status-bar-white {
+    position: absolute;
+    top: 0;
+    left: -6px;
+    width: 420px;
+    height: 45px;
+  }
+  
+  .iphone-plus .frame {
+    position: absolute;
+    width: calc(100% + 2px);
+    height: calc(100% + 2px);
+    top: -1px;
+    left: -1px;
+    background-color: #ffffff;
+    opacity: 0.0;
+  }
+  
+  .iphone-plus .status-bar {
+    position: absolute;
+    width: calc(100% - 35px);
+    top: calc(50.00% - 8px);
+    left: 21px;
+    height: 18px;
+    overflow: hidden;
+  }
+  
+  .iphone-plus .battery {
+    position: absolute;
+    top: calc(50.00% - 6px);
+    right: 0;
+    width: 24px;
+    height: 11px;
+  }
+  
+  .iphone-plus .border {
+    position: absolute;
+    width: calc(100% - 2px);
+    height: 100%;
+    top: 0;
+    left: 0;
+    border-radius: 2.67px;
+    border: 1px solid;
+    border-color: #ffffff;
+    opacity: 0.35;
+  }
+  
+  .iphone-plus .cap {
+    position: absolute;
+    top: calc(50.00% - 2px);
+    right: 0;
+    width: 1px;
+    height: 4px;
+  }
+  
+  .iphone-plus .capacity {
+    position: absolute;
+    height: calc(100% - 4px);
+    top: 2px;
+    left: 2px;
+    width: 18px;
+    background-color: #ffffff;
+    border-radius: 1.33px;
+  }
+  
+  .iphone-plus .wifi {
+    position: absolute;
+    width: 4.51%;
+    height: 61.11%;
+    top: 18.51%;
+    left: 86.85%;
+  }
+  
+  .iphone-plus .cellular-connection {
+    position: absolute;
+    width: 5.01%;
+    height: 59.26%;
+    top: 20.37%;
+    left: 80.37%;
+  }
+  
+  .iphone-plus .time-style {
+    position: absolute;
+    height: 100%;
+    top: 0;
+    left: 0;
+    width: 54px;
+    display: flex;
+  }
+  
+  .iphone-plus .time-clipping-group {
+    flex: 1;
+    width: 54px;
+    display: flex;
+  }
+  
+  .iphone-plus .time {
+    flex: 1;
+    width: 54px;
+    font-family: "SF Pro Display-Semibold", Helvetica;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 15px;
+    text-align: center;
+    letter-spacing: -0.30px;
+    line-height: 18px;
+    white-space: nowrap;
+  }
+  
+  .iphone-plus .rectangle {
+    position: absolute;
+    top: -7px;
+    left: 132px;
+    width: 150px;
+    height: 37px;
+    background-color: #000000;
+    border-radius: 10px 10px 40px 40px;
+  }
+  
+  .iphone-plus .img {
+    top: 311px;
+    left: 150px;
+    width: 113px;
+    height: 113px;
+    position: absolute;
+    object-fit: cover;
+  }
+  
+  .iphone-plus .div {
+    position: absolute;
+    top: 462px;
+    left: 83px;
+    width: 247px;
+    height: 19px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+  }
+  
+  .iphone-plus .rectangle-2 {
+    position: absolute;
+    top: 462px;
+    left: 83px;
+    width: 149px;
+    height: 19px;
+    background-color: #9747ff;
+    border-radius: 20px;
+  }
+  

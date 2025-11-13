@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <title>Registro - Demo Fake</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="container">
+    <h1>Crear cuenta</h1>
+
+    <form id="registerForm" class="card" novalidate>
+      <label>
+        Nombre
+        <input type="text" id="nombre" required placeholder="Tu nombre" />
+      </label>
+
+      <label>
+        Email
+        <input type="email" id="email" required placeholder="tú@ejemplo.com" />
+      </label>
+
+      <label>
+        Contraseña
+        <input type="password" id="password" required placeholder="mínimo 4 caracteres" />
+      </label>
+
+      <button type="submit">Registrarme</button>
+
+      <p id="message" class="message"></p>
+    </form>
+
+    <div class="card tips">
+      <p>¿Ya tienes cuenta? <a href="index.html">Inicia sesión</a></p>
+    </div>
+  </main>
+
+  <script src="register.js"></script>
+</body>
+</html>

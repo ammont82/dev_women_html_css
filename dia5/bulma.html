@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejemplo con Bulma</title>
+  <!-- Bulma CSS CDN -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+</head>
+<body>
+
+  <!-- 🧭 Barra de navegación -->
+  <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="#">Mi Sitio</a>
+      <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarMenu">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+    <div id="navbarMenu" class="navbar-menu">
+      <div class="navbar-end">
+        <a class="navbar-item is-active" href="#">Inicio</a>
+        <a class="navbar-item" href="#">Sobre mí</a>
+        <a class="navbar-item" href="#">Contacto</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- 🏠 Sección principal -->
+  <section class="section">
+    <div class="container">
+      <h1 class="title has-text-centered">Bienvenidos a mi página</h1>
+      <div class="columns is-multiline">
+        
+        <!-- Tarjeta 1 -->
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/300/200" alt="Proyecto 1">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Proyecto 1</p>
+              <p>Descripción breve del proyecto usando Bulma.</p>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Ver más</a>
+            </footer>
+          </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/301/200" alt="Proyecto 2">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Proyecto 2</p>
+              <p>Otra tarjeta mostrando la simplicidad de Bulma.</p>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Ver más</a>
+            </footer>
+          </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="column is-one-third">
+          <div class="card">
+            <div class="card-image">
+              <figure class="image is-4by3">
+                <img src="https://picsum.photos/302/200" alt="Proyecto 3">
+              </figure>
+            </div>
+            <div class="card-content">
+              <p class="title is-5">Proyecto 3</p>
+              <p>Demostración del diseño responsivo con Bulma.</p>
+            </div>
+            <footer class="card-footer">
+              <a href="#" class="card-footer-item">Ver más</a>
+            </footer>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ⚙️ Pie de página -->
+  <footer class="footer has-background-light">
+    <div class="content has-text-centered">
+      <p>© 2025 Mi Sitio Web - Hecho con 💙 y Bulma</p>
+    </div>
+  </footer>
+
+  <!-- Script para el menú móvil -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const burgers = Array.from(document.querySelectorAll('.navbar-burger'));
+      burgers.forEach(burger => {
+        burger.addEventListener('click', () => {
+          const target = document.getElementById(burger.dataset.target);
+          burger.classList.toggle('is-active');
+          target.classList.toggle('is-active');
+        });
+      });
+    });
+  </script>
+
+</body>
+</html>
