@@ -4,4 +4,4 @@ En este github encontrareis los ejercicios que hemos ido haciendo durante el cur
 
 Para practicar con HTML y CSS podeis usar la herramienta online <a href="https://codepen.io/pen/">CodePen</a>.
 
-Y para escribir código recomiendo usar "Visual Studio Code" y instalar alguna extensión para testear HTML como <a href="https://marketplace.visualstudio.com/items?itemName=george-alisson.html-preview-vscode">HTML Preview</a>.
+Y para escribir código recomiendo usar "Visual Studio Code" y instalar alguna extensión para testear HTML como <a href="https://marketplace.visualstudio.com/items?itemName=george-alisson.html-preview-vscode">HTML Preview</a>. fsafga
